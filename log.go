@@ -6,9 +6,9 @@
 
 // Extended logging pkg for go.
 // Output log format:
-//	 "LEVEL: DATE TIME: g=GOROUTINE_ID: FILE:LINE: LOG_CONTENT\n"
+//   "LEVEL: DATE TIME: g=GOROUTINE_ID: FILE:LINE: LOG_CONTENT\n"
 // eg:
-//	 "NOTICE: 08-06 10:45:19.598: g=12: bvc.go:100: hello world"
+//   "NOTICE: 08-06 10:45:19.598: g=12: bvc.go:100: hello world"
 package logex
 
 import (
@@ -167,8 +167,7 @@ func itoa(buf *[]byte, i int, wid int) {
 	*buf = append(*buf, b[bp:]...)
 }
 
-// Goid returns the id of goroutine, defined in ./goid.c
-func goid() int32
+// Goid returns the id of goroutine, defined in ./goid.go
 
 // Fatalf is equivalent to Printf() for FATAL-level log.
 func Fatalf(format string, v ...interface{}) {
